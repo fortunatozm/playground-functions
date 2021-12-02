@@ -32,17 +32,30 @@ function splitSentence(text) {
   let breakText = text.split(' ');
 
   return breakText;
-  
+
   // seu código aqui
 }
 
 // Desafio 4
-function concatName() {
+function concatName(arrayNames) {
+
+  let firstName = arrayNames.shift();
+  let lastName = arrayNames[arrayNames.length - 1];
+
+  let nameFilter = lastName + ", " + firstName;
+
+  return nameFilter;
+
   // seu código aqui
 }
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
+
+  let pontos = wins*3 + ties;
+
+  return pontos;
+
   // seu código aqui
 }
 
