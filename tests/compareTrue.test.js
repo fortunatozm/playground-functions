@@ -17,30 +17,3 @@ describe('1 - Crie uma função usando o operador &&', () => {
     expect(compareTrue(true, true)).toBe(true);
   });
 });
-
-
-function compareTrue (valueTrue, valueFalse) {
-  
-    
-  if (valueFalse === false &&  valueFalse === false) {
-    
-    return false;
-
-  } else if (valueTrue === true &&  valueTrue === true) {
-    
-    return true;
-
-  }else{
-
-    return false;
-
-  }
-
-}
-
-let a = true;
-
-let b = false;
-
-console.log(compareTrue(b,b));
-
