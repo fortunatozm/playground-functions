@@ -39,7 +39,7 @@ function splitSentence(text) {
 // Desafio 4
 function concatName(arrayNames) {
 
-  let firstName = arrayNames.shift();
+  let firstName = arrayNames[0];
   let lastName = arrayNames[arrayNames.length - 1];
 
   let nameFilter = lastName + ", " + firstName;
