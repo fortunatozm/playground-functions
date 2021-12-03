@@ -60,7 +60,16 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrayNumbers) {
+
+  let count = 0;
+  for (let index = 0; index < arrayNumbers.length; index++) {
+    let i = index;
+    if (Math.max.apply(Math, arrayNumbers) === arrayNumbers[i] ) {
+      count++;
+    }
+  }
+  return count;
   // seu código aqui
 }
 
