@@ -134,10 +134,48 @@ function fizzBuzz(arrayNumbers) {
 }
 
 // Desafio 9
-function encode() {
+function encode(textReceived) {
+
+  let textVector = textReceived.split('');
+  let vectNumCompare = ['1','2','3','4','5'];
+  let vectLetCompare = ['a','e','i','o','u',];
+
+  for (let index = 0; index < textVector.length; index++) {
+    
+    for (let i = 0; i < vectLetCompare.length; i++) {
+     
+      if(vectLetCompare[i] === textVector[index]){
+      
+      textVector[index] = vectNumCompare[i];
+      }
+    }
+    
+  }
+
+  return textVector.join('');
+
   // seu código aqui
 }
-function decode() {
+function decode(textReceived) {
+
+  let textVector = textReceived.split('');
+  let vectNumCompare = ['1','2','3','4','5'];
+  let vectLetCompare = ['a','e','i','o','u',];
+
+  for (let index = 0; index < textVector.length; index++) {
+    
+    for (let i = 0; i < vectNumCompare.length; i++) {
+     
+      if(vectNumCompare[i] === textVector[index]){
+      
+      textVector[index] = vectLetCompare[i];
+      }
+    }
+    
+  }
+
+  return textVector.join('') ;
+
   // seu código aqui
 }
 
