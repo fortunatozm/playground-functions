@@ -32,7 +32,22 @@ function generatePhoneNumber() {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
+
+  if(lineA < (lineB + lineC) && lineB < (lineC + lineA) && lineC < (lineA + lineB)) {
+
+    if(lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineC - lineA) && lineC > Math.abs(lineA - lineB)){
+
+      return true;
+
+    } else{
+      return false;
+    }
+
+  } else{
+
+    return false;
+  }
   // seu código aqui
 }
 
